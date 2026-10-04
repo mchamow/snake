@@ -8,7 +8,7 @@ export type Status = 'ready' | 'running' | 'paused' | 'over' | 'won'
 export const SPEEDS = ['slow', 'normal', 'fast'] as const
 export type Speed = (typeof SPEEDS)[number]
 /** Milliseconds between moves. */
-export const TICK_MS: Record<Speed, number> = { slow: 150, normal: 100, fast: 65 }
+export const TICK_MS: Record<Speed, number> = { slow: 280, normal: 200, fast: 140 }
 
 export interface Settings {
   speed: Speed
